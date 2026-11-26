@@ -1,0 +1,35 @@
+### - Teste do servidor
+GET http://localhost:3000/
+Content-Type: application/json
+
+### - Cadastrar Usuário
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "nome": "Marcos",
+    "email": "marcos@gmail.com",
+    "cpf": "222.333.444-12",
+    "telefone": "(48) 9 8877 - 6655"
+}
+
+### - Cadastrar Usuário 2
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "nome": "Mateus",
+    "email": "mateus@gmail.com",
+    "cpf": "555.333.444-12",
+    "telefone": "(48) 9 8877 - 6655"
+}
+
+
+### - Consultar Usuário 1
+GET http://localhost:3000/usuario/1
+Content-Type: application/json
+
+
+### - Consultar Usuário 2
+GET http://localhost:3000/usuario/2
+Content-Type: application/json
