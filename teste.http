@@ -1,0 +1,99 @@
+### 1. Cadastrar usuario 1 - Ana
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+  "nome": "Ana",
+  "email": "ana@gmail.com",
+  "cpf": "123.456.789-12",
+  "telefone": "48-98877-6655"
+}
+
+### 2. Cadastrar usuario 2 - Bruno
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+  "nome": "Bruno",
+  "email": "bruno@gmail.com",
+  "cpf": "456.123.789-23",
+  "telefone": "47-95544-3322"
+}
+
+### 3. Cadastrar usuario 3 - Diego
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+  "nome": "Diego",
+  "email": "diego@gmail.com",
+  "cpf": "789.456.123-34",
+  "telefone": "47-94488-7755"
+}
+
+### 4. Cadastrar suco 1 - laranja
+POST http://localhost:3000/suco
+Content-Type: application/json
+
+{
+  "sabor": "LARANJA",
+  "volume": 5,
+  "quantidade": 45,
+  "preco": 37.25,
+  "idUsuario": 1
+}
+
+### 5. Cadastrar suco 2 - uva
+POST http://localhost:3000/suco
+Content-Type: application/json
+
+{
+  "sabor": "UVA",
+  "volume": 1,
+  "quantidade": 36,
+  "preco": 32.50,
+  "idUsuario": 1
+}
+
+### 6. Cadastrar suco 3 - morango
+POST http://localhost:3000/suco
+Content-Type: application/json
+
+{
+  "sabor": "MORANGO",
+  "volume": 5,
+  "quantidade": 28,
+  "preco": 42.75,
+  "idUsuario": 2
+}
+
+### 7. Listar todos os usuarios
+GET http://localhost:3000/usuarios
+
+### 8. Consultar usuario por codUsuario
+GET http://localhost:3000/usuario/1
+
+### 9. Atualizar usuario por codUsuario
+PUT http://localhost:3000/usuario/1
+Content-Type: application/json
+
+{
+  "nome": "Ana Silva",
+  "email": "ana@gmail.com",
+  "cpf": "123.456.789-12",
+  "telefone": "48-98877-6655"
+}
+
+### 10. Cadastrar usuario 4 - Davi
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+  "nome": "Davi",
+  "email": "davi@gmail.com",
+  "cpf": "788.456.123-34",
+  "telefone": "47-94488-7755"
+}
+
+### 10. Apagar usuario por codUsuario
+DELETE http://localhost:3000/usuario/4
